@@ -1,0 +1,9 @@
+<p>ingredient-page works!</p>
+<div>
+    <img [src]="selectedCocktail.strDrinkThumb" alt="{{ selectedCocktail.strDrink }}">
+    <h2>{{ selectedCocktail.strDrink }}</h2>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li *ngFor="let ingredient of ingredients">{{ ingredient }}</li>
+    </ul>
+  </div>

@@ -1,0 +1,10 @@
+<p>cocktail-page works!</p>
+<div *ngFor="let cocktail of cocktails">
+    <div class="card" (click)="goToIngredientPage(cocktail)">
+      <img [src]="cocktail.strDrinkThumb" alt="{{ cocktail.strDrink }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ cocktail.strDrink }}</h5>
+        <p>{{ cocktail.strAlcoholic }}</p>
+      </div>
+    </div>
+  </div>
